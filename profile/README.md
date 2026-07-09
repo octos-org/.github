@@ -1,11 +1,6 @@
-```
- ██████╗  ██████╗████████╗ ██████╗ ███████╗
-██╔═══██╗██╔════╝╚══██╔══╝██╔═══██╗██╔════╝
-██║   ██║██║        ██║   ██║   ██║███████╗
-██║   ██║██║        ██║   ██║   ██║╚════██║
-╚██████╔╝╚██████╗   ██║   ╚██████╔╝███████║
- ╚═════╝  ╚═════╝   ╚═╝    ╚═════╝ ╚══════╝
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/octos-org/.github/main/profile/octos-wordmark.png" alt="OCTOS" width="680">
+</p>
 
 # Octos 🐙
 
@@ -40,18 +35,37 @@ Connect your LLM API keys and messaging channels. Octos handles conversation rou
 - **Native office suite** — PPTX/DOCX/XLSX via pure Rust (zip + quick-xml)
 - **Sandbox isolation** — bwrap + sandbox-exec + Docker. `deny(unsafe_code)` workspace-wide
 
+## Install
+
+```bash
+# One-line installer — installs the binary + sets up `octos serve` as a service (macOS / Linux)
+curl -fsSL https://github.com/octos-org/octos/releases/latest/download/install.sh | bash
+
+# Homebrew (macOS Apple Silicon, Linux x86_64/ARM64)
+brew install octos-org/tap/octos
+
+# npm (macOS Apple Silicon, Linux x86_64/ARM64, Windows x64)
+npm install -g @octos-org/octos
+```
+
+```powershell
+# Windows (PowerShell)
+irm https://github.com/octos-org/octos/releases/latest/download/install.ps1 | iex
+```
+
+Or build from source with the full feature set (REST API + dashboard + channels):
+
+```bash
+cargo install --path crates/octos-cli \
+    --features "api,telegram,discord,dingtalk,whatsapp,feishu,twilio,wecom,wecom-bot,audio_mp3"
+```
+
 ## Quick Start
 
 ```bash
-# CLI (chat only)
-cargo install --path crates/octos-cli
-export ANTHROPIC_API_KEY=your-key
-octos chat
-
-# Full: web dashboard + REST API + all channels
-cargo install --path crates/octos-cli \
-    --features "api,telegram,discord,dingtalk,whatsapp,feishu,twilio,wecom,wecom-bot,audio_mp3"
-octos serve   # http://localhost:50080
+export DEEPSEEK_API_KEY=your-key
+octos chat --provider deepseek     # interactive CLI
+octos serve                        # web dashboard + REST API → http://localhost:50080
 ```
 
 ## Documentation
