@@ -2,10 +2,6 @@
   <img src="https://raw.githubusercontent.com/octos-org/.github/main/profile/octos-wordmark.png" alt="OCTOS" width="680">
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/octos-org/.github/main/profile/octos-tagline.png" alt="Open Cognitive Tasks Orchestration System" width="900">
-</p>
-
 <p align="center"><a href="https://github.com/octos-org/.github/blob/main/profile/README.md">English</a> · <b>中文</b></p>
 
 > 像章鱼一样——9 个大脑，每条触手独立思考，却共享同一个大脑。
