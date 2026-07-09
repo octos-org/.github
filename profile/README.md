@@ -2,9 +2,11 @@
   <img src="https://raw.githubusercontent.com/octos-org/.github/main/profile/octos-wordmark.png" alt="OCTOS" width="680">
 </p>
 
-# Octos 🐙
+<p align="center">
+  <img src="https://raw.githubusercontent.com/octos-org/.github/main/profile/octos-tagline.png" alt="Open Cognitive Tasks Orchestration System" width="900">
+</p>
 
-**Open Cognitive Tasks Orchestration System**
+<p align="center"><b>English</b> · <a href="https://github.com/octos-org/.github/blob/main/profile/README.zh.md">中文</a></p>
 
 > Like an octopus — 9 brains, every arm thinks independently, but they share one brain.
 
