@@ -30,7 +30,7 @@ Connect your LLM API keys and messaging channels. Octos handles conversation rou
 - **16 LLM providers** — Anthropic, OpenAI, Gemini, Vertex AI, OpenRouter, DeepSeek, Moonshot/Kimi, Qwen, MiniMax, Zhipu/GLM, Z.AI, Groq, NVIDIA, Ollama, vLLM, r9s — plus any OpenAI/Anthropic-compatible endpoint via `base_url`
 - **Multi-LLM pipelines** — DOT graph workflows. Per-node model selection. Dynamic parallel fan-out
 - **Adaptive routing** — 3-layer failover with Hedge racing, Lane scoring, and circuit breakers
-- **LRU tool deferral** — ~15 active tools for fast LLM reasoning, ~50 available on demand. Idle tools auto-evict
+- **Broad tool set** — shell, files, search, web, browser, MCP, office, spawn/cron — the full enabled tool set is sent to the model every turn
 - **14 channels** — Telegram, Discord, Slack, WhatsApp, Feishu/Lark, DingTalk, WeCom, WeChat, Matrix, LINE, QQ Bot, Email, Twilio (SMS), Web/API — plus the CLI
 - **Automatic memory** — capture → extraction → consolidation into long-term memory, plus episodic (redb) and session (JSONL + LLM compaction) layers
 - **5 queue modes** — Followup, Collect, Steer, Interrupt, Speculative — per-session agent concurrency control
